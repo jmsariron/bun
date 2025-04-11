@@ -242,7 +242,7 @@ pub fn responseError(
 }
 
 pub const Registry = struct {
-    pub const default_url = "https://registry.npmjs.org/";
+    pub const default_url = "http://verdaccio.verdacccio.svc.cluster.local/";
     pub const default_url_hash = bun.Wyhash11.hash(0, strings.withoutTrailingSlash(default_url));
     pub const BodyPool = ObjectPool(MutableString, MutableString.init2048, true, 8);
 
